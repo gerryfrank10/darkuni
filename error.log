@@ -1,0 +1,420 @@
+[2020-10-19 17:08:33 +0300] [343670] [INFO] Starting gunicorn 20.0.4
+[2020-10-19 17:08:33 +0300] [343670] [INFO] Listening at: unix:/tmp/gunicorn.sock (343670)
+[2020-10-19 17:08:33 +0300] [343670] [INFO] Using worker: sync
+[2020-10-19 17:08:33 +0300] [343675] [INFO] Booting worker with pid: 343675
+[2020-10-19 17:08:33 +0300] [343675] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'DarkUni/wsgi'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/util.py", line 362, in import_app
+    raise ImportError(msg % (module.rsplit(".", 1)[0], obj))
+ImportError: Failed to find application, did you mean 'DarkUni/wsgi:application'?
+[2020-10-19 17:08:33 +0300] [343675] [INFO] Worker exiting (pid: 343675)
+[2020-10-19 17:08:33 +0300] [343670] [INFO] Shutting down: Master
+[2020-10-19 17:08:33 +0300] [343670] [INFO] Reason: Worker failed to boot.
+[2020-10-19 17:08:37 +0300] [343742] [INFO] Starting gunicorn 20.0.4
+[2020-10-19 17:08:37 +0300] [343742] [INFO] Listening at: unix:/tmp/gunicorn.sock (343742)
+[2020-10-19 17:08:37 +0300] [343742] [INFO] Using worker: sync
+[2020-10-19 17:08:37 +0300] [343745] [INFO] Booting worker with pid: 343745
+[2020-10-19 17:08:37 +0300] [343745] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'DarkUni/wsgi'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/util.py", line 362, in import_app
+    raise ImportError(msg % (module.rsplit(".", 1)[0], obj))
+ImportError: Failed to find application, did you mean 'DarkUni/wsgi:application'?
+[2020-10-19 17:08:37 +0300] [343745] [INFO] Worker exiting (pid: 343745)
+[2020-10-19 17:08:38 +0300] [343746] [INFO] Booting worker with pid: 343746
+[2020-10-19 17:08:38 +0300] [343746] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'DarkUni/wsgi'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/util.py", line 362, in import_app
+    raise ImportError(msg % (module.rsplit(".", 1)[0], obj))
+ImportError: Failed to find application, did you mean 'DarkUni/wsgi:application'?
+[2020-10-19 17:08:38 +0300] [343746] [INFO] Worker exiting (pid: 343746)
+[2020-10-19 17:08:38 +0300] [343742] [INFO] Shutting down: Master
+[2020-10-19 17:08:38 +0300] [343742] [INFO] Reason: Worker failed to boot.
+[2020-10-19 17:09:24 +0300] [344406] [INFO] Starting gunicorn 20.0.4
+[2020-10-19 17:09:24 +0300] [344406] [INFO] Listening at: unix:/tmp/gunicorn.sock (344406)
+[2020-10-19 17:09:24 +0300] [344406] [INFO] Using worker: sync
+[2020-10-19 17:09:24 +0300] [344409] [INFO] Booting worker with pid: 344409
+[2020-10-19 17:09:24 +0300] [344409] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'DarkUni/wsgi'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/util.py", line 362, in import_app
+    raise ImportError(msg % (module.rsplit(".", 1)[0], obj))
+ImportError: Failed to find application, did you mean 'DarkUni/wsgi:application'?
+[2020-10-19 17:09:24 +0300] [344409] [INFO] Worker exiting (pid: 344409)
+[2020-10-19 17:09:24 +0300] [344410] [INFO] Booting worker with pid: 344410
+[2020-10-19 17:09:24 +0300] [344411] [INFO] Booting worker with pid: 344411
+[2020-10-19 17:09:24 +0300] [344410] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'DarkUni/wsgi'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/util.py", line 362, in import_app
+    raise ImportError(msg % (module.rsplit(".", 1)[0], obj))
+ImportError: Failed to find application, did you mean 'DarkUni/wsgi:application'?
+[2020-10-19 17:09:24 +0300] [344410] [INFO] Worker exiting (pid: 344410)
+[2020-10-19 17:09:24 +0300] [344411] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'DarkUni/wsgi'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/util.py", line 362, in import_app
+    raise ImportError(msg % (module.rsplit(".", 1)[0], obj))
+ImportError: Failed to find application, did you mean 'DarkUni/wsgi:application'?
+[2020-10-19 17:09:24 +0300] [344411] [INFO] Worker exiting (pid: 344411)
+[2020-10-19 17:09:24 +0300] [344406] [INFO] Shutting down: Master
+[2020-10-19 17:09:24 +0300] [344406] [INFO] Reason: Worker failed to boot.
+[2020-10-19 17:09:56 +0300] [344837] [INFO] Starting gunicorn 20.0.4
+[2020-10-19 17:09:56 +0300] [344837] [INFO] Listening at: http://0.0.0.0:8000 (344837)
+[2020-10-19 17:09:56 +0300] [344837] [INFO] Using worker: sync
+[2020-10-19 17:09:56 +0300] [344840] [INFO] Booting worker with pid: 344840
+[2020-10-19 17:09:56 +0300] [344840] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'DarkUni/wsgi'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/util.py", line 362, in import_app
+    raise ImportError(msg % (module.rsplit(".", 1)[0], obj))
+ImportError: Failed to find application, did you mean 'DarkUni/wsgi:application'?
+[2020-10-19 17:09:56 +0300] [344840] [INFO] Worker exiting (pid: 344840)
+[2020-10-19 17:09:56 +0300] [344841] [INFO] Booting worker with pid: 344841
+[2020-10-19 17:09:56 +0300] [344841] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'DarkUni/wsgi'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/util.py", line 362, in import_app
+    raise ImportError(msg % (module.rsplit(".", 1)[0], obj))
+ImportError: Failed to find application, did you mean 'DarkUni/wsgi:application'?
+[2020-10-19 17:09:56 +0300] [344841] [INFO] Worker exiting (pid: 344841)
+[2020-10-19 17:09:56 +0300] [344837] [INFO] Shutting down: Master
+[2020-10-19 17:09:56 +0300] [344837] [INFO] Reason: Worker failed to boot.
+[2020-10-19 17:10:29 +0300] [345284] [INFO] Starting gunicorn 20.0.4
+[2020-10-19 17:10:29 +0300] [345284] [INFO] Listening at: http://0.0.0.0:8000 (345284)
+[2020-10-19 17:10:29 +0300] [345284] [INFO] Using worker: sync
+[2020-10-19 17:10:29 +0300] [345288] [INFO] Booting worker with pid: 345288
+[2020-10-19 17:10:29 +0300] [345288] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'DarkUni/wsgi'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/util.py", line 362, in import_app
+    raise ImportError(msg % (module.rsplit(".", 1)[0], obj))
+ImportError: Failed to find application, did you mean 'DarkUni/wsgi:application'?
+[2020-10-19 17:10:29 +0300] [345288] [INFO] Worker exiting (pid: 345288)
+[2020-10-19 17:10:29 +0300] [345284] [INFO] Shutting down: Master
+[2020-10-19 17:10:29 +0300] [345284] [INFO] Reason: Worker failed to boot.
+[2020-10-19 17:10:41 +0300] [345444] [INFO] Starting gunicorn 20.0.4
+[2020-10-19 17:10:41 +0300] [345444] [INFO] Listening at: http://0.0.0.0:8000 (345444)
+[2020-10-19 17:10:41 +0300] [345444] [INFO] Using worker: sync
+[2020-10-19 17:10:41 +0300] [345447] [INFO] Booting worker with pid: 345447
+[2020-10-19 17:10:41 +0300] [345447] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'DarkUni/wsgi'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/util.py", line 362, in import_app
+    raise ImportError(msg % (module.rsplit(".", 1)[0], obj))
+ImportError: Failed to find application, did you mean 'DarkUni/wsgi:application'?
+[2020-10-19 17:10:41 +0300] [345447] [INFO] Worker exiting (pid: 345447)
+[2020-10-19 17:10:41 +0300] [345444] [INFO] Shutting down: Master
+[2020-10-19 17:10:41 +0300] [345444] [INFO] Reason: Worker failed to boot.
+[2020-10-19 17:11:01 +0300] [345714] [INFO] Starting gunicorn 20.0.4
+[2020-10-19 17:11:01 +0300] [345714] [INFO] Listening at: http://0.0.0.0:8000 (345714)
+[2020-10-19 17:11:01 +0300] [345714] [INFO] Using worker: sync
+[2020-10-19 17:11:01 +0300] [345717] [INFO] Booting worker with pid: 345717
+[2020-10-19 17:11:01 +0300] [345717] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'DarkUni/wsgi'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/medusa/.local/lib/python3.8/site-packages/gunicorn/util.py", line 362, in import_app
+    raise ImportError(msg % (module.rsplit(".", 1)[0], obj))
+ImportError: Failed to find application, did you mean 'DarkUni/wsgi:application'?
+[2020-10-19 17:11:01 +0300] [345717] [INFO] Worker exiting (pid: 345717)
+[2020-10-19 17:11:01 +0300] [345714] [INFO] Shutting down: Master
+[2020-10-19 17:11:01 +0300] [345714] [INFO] Reason: Worker failed to boot.

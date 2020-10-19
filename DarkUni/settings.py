@@ -13,7 +13,7 @@ SECRET_KEY = 'd!t=)+l4q$%jp2*lx7&&u_97h$8!4=itq6%t+g*#s0%uef-i3k'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['0.0.0.0',]
 
 
 # Application definition
@@ -65,8 +65,12 @@ WSGI_APPLICATION = 'DarkUni.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'darkuni',
+        'USER': 'gerald',
+        'HOST': 'localhost',
+        'PASSWORD': 'Hacker',
+        'PORT': 5432,
     }
 }
 
