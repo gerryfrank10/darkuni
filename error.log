@@ -418,3 +418,233 @@ ImportError: Failed to find application, did you mean 'DarkUni/wsgi:application'
 [2020-10-19 17:11:01 +0300] [345717] [INFO] Worker exiting (pid: 345717)
 [2020-10-19 17:11:01 +0300] [345714] [INFO] Shutting down: Master
 [2020-10-19 17:11:01 +0300] [345714] [INFO] Reason: Worker failed to boot.
+[2020-10-19 17:34:18 +0300] [365105] [INFO] Starting gunicorn 20.0.4
+[2020-10-19 17:34:18 +0300] [365105] [INFO] Listening at: http://0.0.0.0:8000 (365105)
+[2020-10-19 17:34:18 +0300] [365105] [INFO] Using worker: sync
+[2020-10-19 17:34:18 +0300] [365108] [INFO] Booting worker with pid: 365108
+[2020-10-19 17:34:18 +0300] [365109] [INFO] Booting worker with pid: 365109
+[2020-10-19 17:34:18 +0300] [365110] [INFO] Booting worker with pid: 365110
+[2020-10-19 17:34:18 +0300] [365111] [INFO] Booting worker with pid: 365111
+[2020-10-19 14:34:18 +0000] [365108] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/medusa/Django-Apps/DarkUni/venv/lib/python3.8/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/medusa/Django-Apps/DarkUni/venv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/home/medusa/Django-Apps/DarkUni/venv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/medusa/Django-Apps/DarkUni/venv/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/medusa/Django-Apps/DarkUni/venv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/home/medusa/Django-Apps/DarkUni/venv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/medusa/Django-Apps/DarkUni/venv/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 970, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'DarkUni.wsgi.py'; 'DarkUni.wsgi' is not a package
+[2020-10-19 14:34:18 +0000] [365108] [INFO] Worker exiting (pid: 365108)
+[2020-10-19 17:34:18 +0300] [365112] [INFO] Booting worker with pid: 365112
+[2020-10-19 14:34:18 +0000] [365109] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/medusa/Django-Apps/DarkUni/venv/lib/python3.8/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/medusa/Django-Apps/DarkUni/venv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/home/medusa/Django-Apps/DarkUni/venv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/medusa/Django-Apps/DarkUni/venv/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/medusa/Django-Apps/DarkUni/venv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/home/medusa/Django-Apps/DarkUni/venv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/medusa/Django-Apps/DarkUni/venv/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 970, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'DarkUni.wsgi.py'; 'DarkUni.wsgi' is not a package
+[2020-10-19 14:34:18 +0000] [365109] [INFO] Worker exiting (pid: 365109)
+[2020-10-19 17:34:19 +0300] [365119] [INFO] Booting worker with pid: 365119
+[2020-10-19 17:34:19 +0300] [365124] [INFO] Booting worker with pid: 365124
+[2020-10-19 17:34:19 +0300] [365125] [INFO] Booting worker with pid: 365125
+[2020-10-19 14:34:19 +0000] [365110] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/medusa/Django-Apps/DarkUni/venv/lib/python3.8/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/medusa/Django-Apps/DarkUni/venv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/home/medusa/Django-Apps/DarkUni/venv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/medusa/Django-Apps/DarkUni/venv/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/medusa/Django-Apps/DarkUni/venv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/home/medusa/Django-Apps/DarkUni/venv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/medusa/Django-Apps/DarkUni/venv/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 970, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'DarkUni.wsgi.py'; 'DarkUni.wsgi' is not a package
+[2020-10-19 14:34:19 +0000] [365110] [INFO] Worker exiting (pid: 365110)
+[2020-10-19 14:34:19 +0000] [365112] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/medusa/Django-Apps/DarkUni/venv/lib/python3.8/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/medusa/Django-Apps/DarkUni/venv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/home/medusa/Django-Apps/DarkUni/venv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/medusa/Django-Apps/DarkUni/venv/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/medusa/Django-Apps/DarkUni/venv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/home/medusa/Django-Apps/DarkUni/venv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/medusa/Django-Apps/DarkUni/venv/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 970, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'DarkUni.wsgi.py'; 'DarkUni.wsgi' is not a package
+[2020-10-19 14:34:19 +0000] [365112] [INFO] Worker exiting (pid: 365112)
+[2020-10-19 14:34:19 +0000] [365124] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/medusa/Django-Apps/DarkUni/venv/lib/python3.8/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/medusa/Django-Apps/DarkUni/venv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/home/medusa/Django-Apps/DarkUni/venv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/medusa/Django-Apps/DarkUni/venv/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/medusa/Django-Apps/DarkUni/venv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/home/medusa/Django-Apps/DarkUni/venv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/medusa/Django-Apps/DarkUni/venv/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 970, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'DarkUni.wsgi.py'; 'DarkUni.wsgi' is not a package
+[2020-10-19 14:34:19 +0000] [365124] [INFO] Worker exiting (pid: 365124)
+[2020-10-19 14:34:19 +0000] [365111] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/medusa/Django-Apps/DarkUni/venv/lib/python3.8/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/medusa/Django-Apps/DarkUni/venv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/home/medusa/Django-Apps/DarkUni/venv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/medusa/Django-Apps/DarkUni/venv/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/medusa/Django-Apps/DarkUni/venv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/home/medusa/Django-Apps/DarkUni/venv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/medusa/Django-Apps/DarkUni/venv/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 970, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'DarkUni.wsgi.py'; 'DarkUni.wsgi' is not a package
+[2020-10-19 14:34:19 +0000] [365111] [INFO] Worker exiting (pid: 365111)
+[2020-10-19 14:34:19 +0000] [365125] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/medusa/Django-Apps/DarkUni/venv/lib/python3.8/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/medusa/Django-Apps/DarkUni/venv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/home/medusa/Django-Apps/DarkUni/venv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/medusa/Django-Apps/DarkUni/venv/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/medusa/Django-Apps/DarkUni/venv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/home/medusa/Django-Apps/DarkUni/venv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/medusa/Django-Apps/DarkUni/venv/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 970, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'DarkUni.wsgi.py'; 'DarkUni.wsgi' is not a package
+[2020-10-19 14:34:19 +0000] [365125] [INFO] Worker exiting (pid: 365125)
+[2020-10-19 14:34:19 +0000] [365119] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/medusa/Django-Apps/DarkUni/venv/lib/python3.8/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/medusa/Django-Apps/DarkUni/venv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/home/medusa/Django-Apps/DarkUni/venv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/medusa/Django-Apps/DarkUni/venv/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/medusa/Django-Apps/DarkUni/venv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/home/medusa/Django-Apps/DarkUni/venv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/medusa/Django-Apps/DarkUni/venv/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 970, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'DarkUni.wsgi.py'; 'DarkUni.wsgi' is not a package
+[2020-10-19 14:34:19 +0000] [365119] [INFO] Worker exiting (pid: 365119)
+[2020-10-19 17:34:37 +0300] [365384] [INFO] Starting gunicorn 20.0.4
+[2020-10-19 17:34:37 +0300] [365384] [INFO] Listening at: http://0.0.0.0:8000 (365384)
+[2020-10-19 17:34:37 +0300] [365384] [INFO] Using worker: sync
+[2020-10-19 17:34:37 +0300] [365387] [INFO] Booting worker with pid: 365387
+[2020-10-19 17:34:37 +0300] [365388] [INFO] Booting worker with pid: 365388
+[2020-10-19 17:34:37 +0300] [365389] [INFO] Booting worker with pid: 365389
+[2020-10-19 17:34:37 +0300] [365390] [INFO] Booting worker with pid: 365390
+[2020-10-19 17:34:37 +0300] [365391] [INFO] Booting worker with pid: 365391
+[2020-10-19 17:34:37 +0300] [365392] [INFO] Booting worker with pid: 365392
+[2020-10-19 17:34:37 +0300] [365393] [INFO] Booting worker with pid: 365393
+[2020-10-19 17:34:38 +0300] [365396] [INFO] Booting worker with pid: 365396
+[2020-10-19 17:34:38 +0300] [365398] [INFO] Booting worker with pid: 365398
+[2020-10-19 17:43:49 +0300] [372920] [INFO] Starting gunicorn 20.0.4
+[2020-10-19 17:43:49 +0300] [372920] [INFO] Listening at: http://0.0.0.0:8000 (372920)
+[2020-10-19 17:43:49 +0300] [372920] [INFO] Using worker: sync
+[2020-10-19 17:43:49 +0300] [372924] [INFO] Booting worker with pid: 372924
+[2020-10-19 17:43:49 +0300] [372925] [INFO] Booting worker with pid: 372925
+[2020-10-19 17:43:49 +0300] [372926] [INFO] Booting worker with pid: 372926
+[2020-10-19 17:43:49 +0300] [372927] [INFO] Booting worker with pid: 372927
+[2020-10-19 17:43:49 +0300] [372928] [INFO] Booting worker with pid: 372928
+[2020-10-19 17:43:49 +0300] [372929] [INFO] Booting worker with pid: 372929
+[2020-10-19 17:43:49 +0300] [372930] [INFO] Booting worker with pid: 372930
+[2020-10-19 17:43:49 +0300] [372933] [INFO] Booting worker with pid: 372933
+[2020-10-19 17:43:49 +0300] [372935] [INFO] Booting worker with pid: 372935
+[2020-10-19 17:10:48 +0000] [372924] [INFO] Worker exiting (pid: 372924)
+[2020-10-19 17:10:48 +0000] [372925] [INFO] Worker exiting (pid: 372925)
+[2020-10-19 17:10:48 +0000] [372929] [INFO] Worker exiting (pid: 372929)
+[2020-10-19 20:10:48 +0300] [372920] [INFO] Handling signal: term
+[2020-10-19 17:10:48 +0000] [372926] [INFO] Worker exiting (pid: 372926)
+[2020-10-19 17:10:48 +0000] [372927] [INFO] Worker exiting (pid: 372927)
+[2020-10-19 17:10:48 +0000] [372930] [INFO] Worker exiting (pid: 372930)
+[2020-10-19 17:10:48 +0000] [372928] [INFO] Worker exiting (pid: 372928)
+[2020-10-19 17:10:48 +0000] [372933] [INFO] Worker exiting (pid: 372933)
+[2020-10-19 17:10:48 +0000] [372935] [INFO] Worker exiting (pid: 372935)
+[2020-10-19 20:10:48 +0300] [372920] [INFO] Shutting down: Master
