@@ -1,7 +1,7 @@
 version: '3'
 
 services: 
-    api:
+    db:
         image: postgresql
         environment: 
             - POSTGRES_DB=djangodb
@@ -18,5 +18,4 @@ services:
         ports: 
             - "8000:8000"
         depends_on: 
-            - api
-            
+            - db

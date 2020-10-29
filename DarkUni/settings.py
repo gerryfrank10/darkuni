@@ -66,10 +66,10 @@ WSGI_APPLICATION = 'DarkUni.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'darkuni',
-        'USER': 'gerald',
-        'HOST': 'localhost',
-        'PASSWORD': 'Hacker',
+        'NAME': 'djangodb',
+        'USER': 'postgres',
+        'HOST': 'db',
+        'PASSWORD': 'postgres',
         'PORT': 5432,
     }
 }
